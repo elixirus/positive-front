@@ -16,6 +16,8 @@ import {
     useDisclosure,
     Container,
 } from '@chakra-ui/react';
+import logo from '../../logo.svg';
+import './NavBar.css'
 import {
     HamburgerIcon,
     CloseIcon,
@@ -59,11 +61,12 @@ export default function WithSubnavigation() {
                         />
                     </Flex>
                     <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+                        <img src={logo} style={{ height: 24 }} className="app-logo" alt="positive web3 security" />
                         <Text
                             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
                             fontFamily={'heading'}
                             color={useColorModeValue('gray.800', 'white')}>
-                            Positive
+                            Positive.com
                         </Text>
 
                         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -95,12 +98,12 @@ export default function WithSubnavigation() {
                                 textDecoration: 'none',
                                 color: linkHoverColor,
                             }}>
-                              {t("blog")}
+                            {t("blog")}
 
 
                         </Link>
 
-            
+
                         {/* <Button
                             as={'a'}
                             display={{ base: 'none', md: 'inline-flex' }}
