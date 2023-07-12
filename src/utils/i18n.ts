@@ -11,11 +11,13 @@ i18n.use(initReactI18next).init({
         en: {
             translation: {
                 blog: 'blog',
+                contact: 'contact'
             }
         },
         ru: {
             translation: {
                 blog: 'блог',
+                contact: 'контакт'
             }
         },
     },

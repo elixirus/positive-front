@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react';
 import logo from '../../logo.svg';
 import './NavBar.css'
+import { FaGithub, FaTelegram } from 'react-icons/fa';
 import {
     HamburgerIcon,
     CloseIcon,
@@ -90,7 +91,7 @@ export default function WithSubnavigation() {
 
                         <Link
                             p={2}
-                            href="https://blog.positive.com/"
+                            href="#"
                             fontSize={'sm'}
                             fontWeight={500}
                             color={linkColor}
@@ -98,7 +99,7 @@ export default function WithSubnavigation() {
                                 textDecoration: 'none',
                                 color: linkHoverColor,
                             }}>
-                            {t("blog")}
+                            {t("contact")}
 
 
                         </Link>
@@ -273,24 +274,24 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 };
 
 interface NavItem {
-    label: string;
+    label: string | any;
     subLabel?: string;
     children?: Array<NavItem>;
     href?: string;
 }
 
 const NAV_ITEMS: Array<NavItem> = [
+    {
+        label: 'blog',
+        href: 'https://blog.positive.com'
+    },
     // {
-    //     label: 'research',
-    //     href: '#'
+    //     label: <Icon as={FaGithub} w={5} h={5} />,
+    //     href: 'https://github.com/PositiveSecurity',
     // },
     // {
-    //     label: 'blog',
-    //     href: '#',
-    // },
-    // {
-    //     label: 'ctf',
-    //     href: 'ctf',
+    //     label:   <Icon as={FaTelegram} w={5} h={5} />,
+    //     href: 'https://t.me/PositiveSecurity',
     // },
     // {
     //     label: 'edu',

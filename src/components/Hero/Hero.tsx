@@ -35,20 +35,20 @@ export default function CallToActionWithAnnotation() {
                         <Text as={'span'} color={'red'}>
                             Positive {' '}
                         </Text>
-                        web3 security
+                        security
                         <Text as={'span'}>
 
                         </Text>
                     </Heading>
 
-                    {/* <Heading
+                    <Heading
                         fontWeight={100}
-                        fontSize={{ base: '7xl', sm: '7xl', md: '7xl' }}
+                        fontSize={{ base: '1xl', sm: '2xl', md: '4xl' }}
                         lineHeight={'110%'}>
                         <Text as={'span'} color={'black.400'}>
-                            web3
+                        Web3 security research
                         </Text>
-                    </Heading> */}
+                    </Heading>
 
                     <Heading
                         fontWeight={600}
