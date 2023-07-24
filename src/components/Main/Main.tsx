@@ -1,67 +1,33 @@
 // import Head from 'next/head';
 import {
-    Box,
-    Heading,
     Container,
-    Text,
-    Button,
     Stack,
-    Icon,
-    useColorModeValue,
     createIcon,
 } from '@chakra-ui/react';
+import Newsletter from '../Newsletter/Newsletter';
+import Hero from '../Hero/Hero';
+import Technologies from '../Technologies/Technologies';
+import Contact from '../Contact/Contact';
+import { CustomDivider } from '../CustomDivider/CustomDivider';
+import About from '../About/About';
 
 export default function CallToActionWithAnnotation() {
     return (
-
         <Container maxW={'3xl'}>
-            <Stack
-                as={Box}
-                textAlign={'center'}
-                spacing={{ base: 6, md: 12 }}
-                py={{ base: 18, md: 24 }}>
-                    
-                <Heading
-                    fontWeight={100}
-                    fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
-                    lineHeight={'110%'}>
-                    <Text as={'span'} color={'red'}>
-                        Positive {' '}
-                    </Text>
-                    security
-                    <Text as={'span'}>
+            <Stack>
+                <Hero />
+                <CustomDivider title="About" />
+                <About />
+               
+                {/* <Newsletter /> */}
+                
+                <CustomDivider title="Techologies" />
+                <Technologies />
 
-                    </Text>
-                </Heading>
-
-                <Heading
-                    fontWeight={100}
-                    fontSize={{ base: '1xl', sm: '2xl', md: '4xl' }}
-                    lineHeight={'110%'}>
-                    <Text as={'span'} color={'black.400'}>
-                        Web3 security research
-                    </Text>
-                </Heading>
-
-                {/* <Heading
-                    fontWeight={100}
-                    fontSize={{ base: '1xl', sm: '2xl', md: '3xl' }}
-                    lineHeight={'100%'}>
-                    <p>work in progress</p>
-
-                </Heading> */}
-
-                {/* <Stack
-                    direction={'column'}
-                    spacing={3}
-                    align={'center'}
-                    alignSelf={'center'}
-                    position={'relative'}>
-                </Stack> */}
-
+                <CustomDivider title="Request" />
+                <Contact />
             </Stack>
         </Container>
-
     );
 }
 

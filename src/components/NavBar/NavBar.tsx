@@ -67,7 +67,18 @@ export default function WithSubnavigation() {
                             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
                             fontFamily={'heading'}
                             color={useColorModeValue('gray.800', 'white')}>
-                            Positive.com
+                            <Link
+                                p={2}
+                                href="/"
+                                fontSize={'sm'}
+                                fontWeight={500}
+                                color={linkColor}
+                                _hover={{
+                                    textDecoration: 'none',
+                                    color: linkHoverColor,
+                                }}>
+                                Positive.com
+                            </Link>
                         </Text>
 
                         <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -99,11 +110,8 @@ export default function WithSubnavigation() {
                                 textDecoration: 'none',
                                 color: linkHoverColor,
                             }}>
-                            {t("contact")}
-
-
+                            {t("request")}
                         </Link>
-
 
                         {/* <Button
                             as={'a'}
@@ -283,7 +291,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
     {
         label: 'blog',
-        href: 'https://blog.positive.com'
+        href: 'https://blog.positive.com/'
     },
     // {
     //     label: <Icon as={FaGithub} w={5} h={5} />,

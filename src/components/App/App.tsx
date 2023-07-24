@@ -6,6 +6,9 @@ import Newsletter from '../Newsletter/Newsletter';
 import Footer from '../Footer/Footer';
 import { Box, Grid, GridItem, StackDivider, VStack } from '@chakra-ui/react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contact from '../Contact/Contact';
+import Blog from '../Blog/Blog';
+import Main from '../Main/Main';
 
 
 function App() {
@@ -20,15 +23,12 @@ function App() {
             <NavBar />
           </Box>
           <Box flex='1'>
-
             <Routes>
-              <Route path="/" element={<Hero />} />
-              {/* <Route path="/about" element={<About />} /> */}
-
-
+              <Route path="/" element={<Main />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/blog" element={<Blog />} />
             </Routes>
           </Box>
-
           <Box>
             <Footer />
           </Box>
