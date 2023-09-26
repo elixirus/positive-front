@@ -20,7 +20,7 @@ export default function CallToActionWithAnnotation() {
                 textAlign={'center'}
                 spacing={{ base: 6, md: 12 }}
                 py={{ base: 18, md: 24 }}>
-                    
+
                 <Heading
                     fontWeight={100}
                     fontSize={{ base: '2xl', sm: '4xl', md: '6xl' }}
@@ -42,22 +42,6 @@ export default function CallToActionWithAnnotation() {
                         Web3 security research
                     </Text>
                 </Heading>
-
-                {/* <Heading
-                    fontWeight={100}
-                    fontSize={{ base: '1xl', sm: '2xl', md: '3xl' }}
-                    lineHeight={'100%'}>
-                    <p>work in progress</p>
-
-                </Heading> */}
-
-                {/* <Stack
-                    direction={'column'}
-                    spacing={3}
-                    align={'center'}
-                    alignSelf={'center'}
-                    position={'relative'}>
-                </Stack> */}
 
             </Stack>
         </Container>

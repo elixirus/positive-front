@@ -102,6 +102,45 @@ export default function WithSubnavigation() {
 
                         <Link
                             p={2}
+                            href="https://twitter.com/PositiveWeb3"
+                            fontSize={'sm'}
+                            fontWeight={500}
+                            color={linkColor}
+                            _hover={{
+                                textDecoration: 'none',
+                                color: linkHoverColor,
+                            }}>
+                            {t("twitter")}
+                        </Link>
+
+                        <Link
+                            p={2}
+                            href="https://t.me/PositiveWeb3"
+                            fontSize={'sm'}
+                            fontWeight={500}
+                            color={linkColor}
+                            _hover={{
+                                textDecoration: 'none',
+                                color: linkHoverColor,
+                            }}>
+                            {t("telegram")}
+                        </Link>
+
+                        <Link
+                            p={2}
+                            href="https://mirror.xyz/0xB085040c28fdC4eF12Eb5E3B25b44E0dbCBA6b4A"
+                            fontSize={'sm'}
+                            fontWeight={500}
+                            color={linkColor}
+                            _hover={{
+                                textDecoration: 'none',
+                                color: linkHoverColor,
+                            }}>
+                            {t("mirror.xyz")}
+                        </Link>
+
+                        <Link
+                            p={2}
                             href="#"
                             fontSize={'sm'}
                             fontWeight={500}
@@ -112,6 +151,7 @@ export default function WithSubnavigation() {
                             }}>
                             {t("request")}
                         </Link>
+
 
                         {/* <Button
                             as={'a'}
