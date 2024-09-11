@@ -1,24 +1,8 @@
 // import Head from 'next/head';
 import {
     Box,
-    Heading,
     Container,
-    Text,
-    Button,
     Stack,
-    Icon,
-    useColorModeValue,
-    createIcon,
-    Flex,
-    chakra,
-    Image,
-    VStack,
-    SimpleGrid,
-    StackDivider,
-    VisuallyHidden,
-    List,
-    ListItem,
-    HStack,
 } from '@chakra-ui/react';
 
 export default function About() {
@@ -37,7 +21,7 @@ export default function About() {
                     alignSelf={'center'}
                     position={'relative'}>
 
-                    <p>Our company provides web3 security services for blockchain applications and smart contracts.</p>
+                    <p>Our company provides web3 security services for web3 projects</p>
                     <p>We offer a full range of services, including security audits, development and implementation of protection measures, risk monitoring and analysis, and security consulting.</p>
                 </Stack>
             </Stack>

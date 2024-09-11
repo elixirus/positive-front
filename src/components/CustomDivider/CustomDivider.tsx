@@ -40,8 +40,8 @@ export const CustomDivider = (props: any) => {
 
     return (
 
-        <Box position='relative' padding='10'>
-            <Divider margin={10} colorScheme={"red"} borderColor={"red"} size={"20"} variant={"dashed"} />
+        <Box position='relative' padding={props.padding}>
+            <Divider margin={1} colorScheme={"red"} borderColor={"red"} size={"10"} variant={"dashed"} />
             <AbsoluteCenter bg='white' px='4'>
                 {props.title}
             </AbsoluteCenter>

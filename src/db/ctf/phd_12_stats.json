@@ -1,0 +1,178 @@
+[
+    {
+        "username": "Lirikk",
+        "address": "0x6CE3047CA554A0f554918DC899421F879EfD17eC",
+        "level_instance": [
+            "0x6f833d216d3b8A289e34fB9E74820959C77D8C28",
+            "0xFa931D61A838DEC4498c1efD7bb5FF3724c29cfb",
+            "0xf50A440E2879440Df45684becfe824dC97485122",
+            "0x6c19c59C64171Fc68A58045FEEFE35B363329B40",
+            "0x339C994825aFBbDAA677e758806FbF7D42d146b3",
+            "0x9244FF0081c236c6eF1863f9F5b2b7C18A0465D9",
+            "0x02670629fe2d0C562E03b5c4f28e1E1AC2999268",
+            "0x9698D07216975D6D8CB42000a65c2303D6b94652",
+            "0xcBC686182d311a995E1C9B1F684419D4059C28bC",
+            "0xB3F4100D1b9876297f9af7E2c4cFa6bCab69F0a8",
+            "0x1Bf45E9E7C07142cBDb9a7770E04Eb13EA8e8ff2",
+            "0xdd9ce5d549eBb64cEfE86F6A3F91C30d6185aAb1",
+            "0xcC9E8731caEC36fE8978532e3983301D4A4F7027",
+            "0x1243e01a264A9d98501C32f958Dd73A6BA5fEf4a"
+        ],
+        "level_completed": [
+            "0x6ba2367042A4425b0791eB47370E3de3c7D7e9eb",
+            "0xCb794b0199A877Bc44827E222a9eC086bfE4f283",
+            "0xfBc07B0d5fa2DcB9F814e215Ae0d6860366A6a19",
+            "0xbB2877218FC73476Ea9040B190C0f0A968E90eD4"
+        ],
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "tochka4",
+        "address": "0x98b122A41229F1356275fe756f6f485cB6D13Af9",
+        "level_instance": [
+            "0x6e615a38c6ca085A3F81cfD618e75EF53bff4312",
+            "0xdbc02A5ed79a8a0F97d5cfF839bB06b88b1fC781",
+            "0xb28D8ee2Ff4A8eA31C3bf1Ebc3EE1A7Dcc4491A7"
+        ],
+        "level_completed": null,
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "",
+        "address": "0xb7746B84486327d06E2107f4809492C3f73e554d",
+        "level_instance": [
+            "0x98AF5b82D7019ceF642f4E6E6c7546Ef60E20fF2"
+        ],
+        "level_completed": null,
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "Alex282183",
+        "address": "0xc33086D1D2E576ab8B6b9404983627d43373aFd4",
+        "level_instance": [
+            "0xEe9a1d80ef5006B996A3C3B61F4C152DbdF6355A",
+            "0x8B8bc156473a4139c04C15e158522A7CABEfD7f8",
+            "0x6f42D26b0a0b255cd9804049ee680A4A63405a3D",
+            "0xf5923Aea88f17C24898d10723Cc795036d8905f3"
+        ],
+        "level_completed": [
+            "0x6ba2367042A4425b0791eB47370E3de3c7D7e9eb",
+            "0xbB2877218FC73476Ea9040B190C0f0A968E90eD4",
+            "0xfBc07B0d5fa2DcB9F814e215Ae0d6860366A6a19",
+            "0xCb794b0199A877Bc44827E222a9eC086bfE4f283"
+        ],
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "just_looking",
+        "address": "0x034906365b78dF96d41e7a6b19dD0FcbaA9F3be5",
+        "level_instance": [
+            "0xa4D4cfeca29B2480973adEd63EB42Bfdec0380CF",
+            "0x06D77e9EAB4c037e7a1b323852d7078e28fD9a77"
+        ],
+        "level_completed": [
+            "0x6ba2367042A4425b0791eB47370E3de3c7D7e9eb"
+        ],
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "KirillDudnikov",
+        "address": "0xD834Bb06D146d7f2a74F4a59371913acEFB7ac8A",
+        "level_instance": [
+            "0x4863B2FfaDF4A9b2b74fE29AdACB6De61c007F35",
+            "0xA2621a309E2F553dA7DeB46C7172d04bCB690190",
+            "0xAb25115cfBDBd0ef2D45830903DEDAbD527c0CA4",
+            "0x60B0CD64C6ae33d691457D1DD245046a04f87fcA",
+            "0x69eEaEc8974CEaE98b278F59A5abeA1AD8996f31",
+            "0x0f98556D11E325086451Cef1238c53d20736E806",
+            "0x498deCAE2a36d48f384d68E5cc6216189314F5a9"
+        ],
+        "level_completed": [
+            "0x6ba2367042A4425b0791eB47370E3de3c7D7e9eb",
+            "0xbB2877218FC73476Ea9040B190C0f0A968E90eD4",
+            "0xfBc07B0d5fa2DcB9F814e215Ae0d6860366A6a19",
+            "0xCb794b0199A877Bc44827E222a9eC086bfE4f283"
+        ],
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "ironsoul",
+        "address": "0x0482Bb438b284a20E2384A07E3ccc83A968c4fC4",
+        "level_instance": [
+            "0x67181b52224D47F5B0162e8dCA7c943023f92Fbd"
+        ],
+        "level_completed": [
+            "0xCb794b0199A877Bc44827E222a9eC086bfE4f283"
+        ],
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "BronyUraj",
+        "address": "0x8c3fF4A02BDbEbB0c617E3508cc4E203Ff21DacF",
+        "level_instance": [
+            "0xa20157963fEd2CF190d11c8253d0575abaf82448",
+            "0xc547B31942Ba6714693135ad7b3d5f0651d71B04",
+            "0x4462edc8Ed30ef565fB46029eCBB7870b43A09b7",
+            "0xa8d725CEEc5d1C78B2a658Dd4917f5F84208e473"
+        ],
+        "level_completed": [
+            "0x6ba2367042A4425b0791eB47370E3de3c7D7e9eb",
+            "0xbB2877218FC73476Ea9040B190C0f0A968E90eD4",
+            "0xfBc07B0d5fa2DcB9F814e215Ae0d6860366A6a19",
+            "0xCb794b0199A877Bc44827E222a9eC086bfE4f283"
+        ],
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "klkvr",
+        "address": "0x239ace6fD4e5e17dba094D3238914463f2a376AA",
+        "level_instance": [
+            "0x5203E92d66a1dbCAd4CEe44396437CB3421d0d14",
+            "0xD59B63B9c438d967C6Adadd0a5C0fFA94439c369",
+            "0x1fC5991e22eb9C5124EDaEe6BA68F6D1BEab3353",
+            "0x71401846bF96898f212A064BBbBf3455245B3fC3"
+        ],
+        "level_completed": [
+            "0x6ba2367042A4425b0791eB47370E3de3c7D7e9eb",
+            "0xbB2877218FC73476Ea9040B190C0f0A968E90eD4",
+            "0xfBc07B0d5fa2DcB9F814e215Ae0d6860366A6a19",
+            "0xCb794b0199A877Bc44827E222a9eC086bfE4f283"
+        ],
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "Albert",
+        "address": "0xdf133864bA7De0AC6eaB5FdB8A122128843165F8",
+        "level_instance": [
+            "0x9071F92C7a91b685abc709fc34c12d8a9e29A14d",
+            "0x81004473a7FbCaea894A305e67619807cBE7da7B",
+            "0xc5e09A886D5BcB3D742E5ed055Fb29728862E7d5"
+        ],
+        "level_completed": null,
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "antonidos",
+        "address": "0x752daFCADaDDC0908EdD9f215eE089c22CC74aaF",
+        "level_instance": [
+            "0x012ec63EDCC1Bc8AB05AD81C28768B7ca19A119D"
+        ],
+        "level_completed": null,
+        "averageCompletionTime": 10
+    },
+    {
+        "username": "siguint",
+        "address": "0x44280Cf268Dc3135A2545401914BE3b7F20864f9",
+        "level_instance": [
+            "0x2Da259c5973F48F978737Bf51287214cf0623F0F",
+            "0x815f773fc82E7265d96bBB73D43569c98e7F4809",
+            "0x02598D9Ab7Abe689958C33333b4502208310F0c3",
+            "0x6F068c900A88912C95ADAc3E07f8e15e03F41D7f"
+        ],
+        "level_completed": [
+            "0xCb794b0199A877Bc44827E222a9eC086bfE4f283",
+            "0xfBc07B0d5fa2DcB9F814e215Ae0d6860366A6a19"
+        ],
+        "averageCompletionTime": 10
+    }
+]

@@ -3,7 +3,6 @@ import {
     Flex,
     Text,
     IconButton,
-    Button,
     Stack,
     Collapse,
     Icon,
@@ -15,10 +14,14 @@ import {
     useBreakpointValue,
     useDisclosure,
     Container,
+    Spacer,
+    BreadcrumbLink,
+    Breadcrumb,
+    BreadcrumbItem,
 } from '@chakra-ui/react';
 import logo from '../../logo.svg';
 import './NavBar.css'
-import { FaGithub, FaTelegram } from 'react-icons/fa';
+import { FaGithub, FaTelegram, FaTwitter } from 'react-icons/fa';
 import {
     HamburgerIcon,
     CloseIcon,
@@ -26,17 +29,86 @@ import {
     ChevronRightIcon,
 } from '@chakra-ui/icons';
 import { useTranslation } from 'react-i18next';
+import MetaMaskCard from '../Wallet/connectorCards/MetaMaskCard';
+import { Link as ReactRouterLink, useLocation } from "react-router-dom";
 
 export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
     const linkColor = useColorModeValue('gray.600', 'gray.200');
     const linkHoverColor = useColorModeValue('gray.800', 'white');
-    const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-    const { i18n, t } = useTranslation();
+    // const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+    const { t, i18n } = useTranslation();
+    // const { id } = useParams();
+    const location = useLocation();
+
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
+
+    const renderSubmenu = () => {
+        const CTF_NAV_ITEMS: Array<NavItem> = [
+            {
+                label: 'Challenges',
+                href: '/ctf'
+            },
+            {
+                label: 'Leaderboard',
+                href: '/ctf/leaderboard'
+            },
+        ];
+
+        const TOOLS_NAV_ITEMS: Array<NavItem> = [
+            {
+                label: 'zk-hashes',
+                href: '/tools/zk-hashes'
+            },
+            {
+                label: 'toabi',
+                href: '/tools/toabi'
+            },
+        ];
+
+        if (location.pathname.includes("ctf")) {
+
+            return <Breadcrumb separator={<ChevronRightIcon color='gray.500' />}>
+                {CTF_NAV_ITEMS.map((navItem) => (
+                    <BreadcrumbItem key={navItem.label}>
+                        <BreadcrumbLink href={navItem.href}><b></b>{navItem.label}</BreadcrumbLink>
+                    </BreadcrumbItem>
+                ))}
+            </Breadcrumb>
+
+            // return <p>ctf submenu</p>;
+        } else if (location.pathname.includes("dao")) {
+            return <p></p>;
+
+        }
+        else if (location.pathname.includes("edu")) {
+            return <p></p>;
+
+        }
+        else if (location.pathname.includes("faucet")) {
+            return <p></p>;
+
+        }
+        else if (location.pathname.includes("tools")) {
+            return <Breadcrumb separator={<ChevronRightIcon color='gray.500' />}>
+                {TOOLS_NAV_ITEMS.map((navItem) => (
+                    <BreadcrumbItem key={navItem.label}>
+                        <BreadcrumbLink href={navItem.href}><b></b>{navItem.label}</BreadcrumbLink>
+                    </BreadcrumbItem>
+                ))}
+            </Breadcrumb>
+
+        }
+        else {
+            return <p></p>
+        }
+    }
 
     return (
         <Box>
-            <Container as={Stack} maxW={'6xl'} >
+            <Container as={Stack} maxW={'7xl'} >
 
                 <Flex
                     bg={useColorModeValue('white', 'gray.800')}
@@ -77,7 +149,7 @@ export default function WithSubnavigation() {
                                     textDecoration: 'none',
                                     color: linkHoverColor,
                                 }}>
-                                Positive.com
+                                Positive | web3 security
                             </Link>
                         </Text>
 
@@ -87,22 +159,13 @@ export default function WithSubnavigation() {
                     </Flex>
 
                     <Stack
-                        flex={{ base: 1, md: 0 }}
+                        // flex={{ base: 1, md: 0 }}
                         justify={'flex-end'}
                         direction={'row'}
                         spacing={6}>
-                        {/* <Button
-                            as={'a'}
-                            fontSize={'sm'}
-                            fontWeight={400}
-                            variant={'link'}
-                            href={'#'}>
-                            Sign In
-                        </Button> */}
 
                         <Link
-                            p={2}
-                            href="https://twitter.com/PositiveWeb3"
+                            href="https://twitter.com/ptswarm"
                             fontSize={'sm'}
                             fontWeight={500}
                             color={linkColor}
@@ -110,12 +173,12 @@ export default function WithSubnavigation() {
                                 textDecoration: 'none',
                                 color: linkHoverColor,
                             }}>
-                            {t("twitter")}
+
+                            <Icon as={FaTwitter} w={5} h={5} />
                         </Link>
 
                         <Link
-                            p={2}
-                            href="https://t.me/PositiveWeb3"
+                            href="https://t.me/ptswarm"
                             fontSize={'sm'}
                             fontWeight={500}
                             color={linkColor}
@@ -123,11 +186,25 @@ export default function WithSubnavigation() {
                                 textDecoration: 'none',
                                 color: linkHoverColor,
                             }}>
-                            {t("telegram")}
+
+                            <Icon as={FaTelegram} w={5} h={5} />
                         </Link>
 
+
                         <Link
-                            p={2}
+                            // p={2}
+                            href="https://github.com/positivesecurity"
+                            fontSize={'sm'}
+                            fontWeight={500}
+                            color={linkColor}
+                            _hover={{
+                                textDecoration: 'none',
+                                color: linkHoverColor,
+                            }}>
+                            <Icon as={FaGithub} w={5} h={5} color={'black'} />
+                        </Link>
+
+                        {/* <Link
                             href="https://mirror.xyz/0xB085040c28fdC4eF12Eb5E3B25b44E0dbCBA6b4A"
                             fontSize={'sm'}
                             fontWeight={500}
@@ -136,11 +213,14 @@ export default function WithSubnavigation() {
                                 textDecoration: 'none',
                                 color: linkHoverColor,
                             }}>
-                            {t("mirror.xyz")}
+
+                            {t("mirror")}
                         </Link>
 
-                        <Link
-                            p={2}
+                        */}
+
+                        {/* <Link
+                            // p={2}
                             href="#"
                             fontSize={'sm'}
                             fontWeight={500}
@@ -149,11 +229,18 @@ export default function WithSubnavigation() {
                                 textDecoration: 'none',
                                 color: linkHoverColor,
                             }}>
-                            {t("request")}
-                        </Link>
+                            <Button
+                                as={'a'}
+                                fontSize={'sm'}
+                                fontWeight={400}
+                                variant={'link'}
+                                href={'#'}>
+                                connect
+                            </Button>
+                        </Link> */}
 
-
-                        {/* <Button
+                        {/* 
+                        <Button
                             as={'a'}
                             display={{ base: 'none', md: 'inline-flex' }}
                             fontSize={'sm'}
@@ -165,9 +252,64 @@ export default function WithSubnavigation() {
                                 bg: 'pink.300',
                             }}>
                             Sign Up
-                        </Button> */}
+                        </Button> 
+                        */}
+
+
+                        {/* <button type="button" onClick={() => changeLanguage('en')}>
+                            en
+                        </button>
+
+                        <button type="button" onClick={() => changeLanguage('ru')}>
+                            ru
+                        </button> */}
+
                     </Stack>
                 </Flex>
+
+                <Flex
+                    bg={useColorModeValue('white', 'gray.800')}
+                    color={useColorModeValue('gray.600', 'white')}
+                    minH={'20px'}
+                    py={{ base: 2 }}
+                    px={{ base: 4 }}
+                    borderBottom={1}
+                    borderStyle={'solid'}
+                    borderColor={useColorModeValue('gray.200', 'gray.900')}
+                    align={'center'}>
+
+                    <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+
+                        <Box p='0'>
+                            {
+                                renderSubmenu()
+                            }
+                        </Box>
+                        <Spacer />
+                        <Box p='0'>
+                            <Link
+                                href="#"
+                                fontSize={'sm'}
+                                fontWeight={500}
+                                color={linkColor}
+                                _hover={{
+                                    textDecoration: 'none',
+                                    color: linkHoverColor,
+                                }}
+                            >
+                                <MetaMaskCard />
+                            </Link>
+                        </Box>
+
+                    </Flex>
+
+                    {/* <Stack
+                        justify={'flex-end'}
+                        direction={'row'}
+                        spacing={6}>
+                    </Stack> */}
+                </Flex>
+
 
                 <Collapse in={isOpen} animateOpacity>
                     <MobileNav />
@@ -189,8 +331,9 @@ const DesktopNav = () => {
                     <Popover trigger={'hover'} placement={'bottom-start'}>
                         <PopoverTrigger>
                             <Link
+                                as={ReactRouterLink}
                                 p={2}
-                                href={navItem.href ?? '#'}
+                                to={navItem.href ?? '#'}
                                 fontSize={'sm'}
                                 fontWeight={500}
                                 color={linkColor}
@@ -331,8 +474,16 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
     {
         label: 'blog',
-        href: 'https://blog.positive.com/'
+        href: 'blog'
     },
+    {
+        label: 'ctf',
+        href: 'ctf'
+    },
+    // {
+    //     label: 'dao',
+    //     href: 'dao'
+    // },
     // {
     //     label: <Icon as={FaGithub} w={5} h={5} />,
     //     href: 'https://github.com/PositiveSecurity',
@@ -344,5 +495,13 @@ const NAV_ITEMS: Array<NavItem> = [
     // {
     //     label: 'edu',
     //     href: 'edu',
+    // },
+    // {
+    //     label: 'tools',
+    //     href: 'tools',
+    // },
+    // {
+    //     label: 'positoken',
+    //     href: 'positoken',
     // },
 ];

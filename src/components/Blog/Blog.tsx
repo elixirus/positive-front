@@ -1,74 +1,36 @@
-import React from 'react';
-import {
-  Box,
-  Heading,
-  Link,
-  Image,
-  Text,
-  Divider,
-  HStack,
-  Tag,
-  Wrap,
-  WrapItem,
-  SpaceProps,
-  useColorModeValue,
-  Container,
-  VStack,
-} from '@chakra-ui/react';
+import { Container, Divider, Heading } from '@chakra-ui/react';
 import BlogInfo from './BlogInfo';
 import ArticleShort from './ArticleShort';
-import LatestArticles from './LatestArticles';
-
-interface IBlogTags {
-  tags: Array<string>;
-  marginTop?: SpaceProps['marginTop'];
-}
-
-const BlogTags: React.FC<IBlogTags> = (props) => {
-  return (
-    <HStack spacing={2} marginTop={props.marginTop}>
-      {props.tags.map((tag) => {
-        return (
-          <Tag size={'md'} variant="solid" colorScheme="orange" key={tag}>
-            {tag}
-          </Tag>
-        );
-      })}
-    </HStack>
-  );
-};
-
-interface BlogAuthorProps {
-  date: Date;
-  name: string;
-}
-
-export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
-  return (
-    <HStack marginTop="2" spacing="2" display="flex" alignItems="center">
-      <Image
-        borderRadius="full"
-        boxSize="40px"
-        src="https://100k-faces.glitch.me/random-image"
-        alt={`Avatar of ${props.name}`}
-      />
-      <Text fontWeight="medium">{props.name}</Text>
-      <Text>—</Text>
-      <Text>{props.date.toLocaleDateString()}</Text>
-    </HStack>
-  );
-};
+import { CustomDivider } from '../CustomDivider/CustomDivider';
+import articles from "../../db/blog/articles_list.json";
 
 const ArticleList = () => {
+
+  const articles_render = articles.map((a: any) => {
+    return <div key={a.date}>
+      <ArticleShort props={{
+        article_id: a.article_id,
+        tags: a.tags,
+        blog_title: a.blog_title,
+        blog_image: a.blog_image,
+        short: a.short,
+        author_name: a.author,
+        date: a.date,
+        image: a.author_image,
+      }} />
+      <CustomDivider padding="10" />
+    </div>
+  })
+
+
   return (
     <Container maxW={'7xl'} p="12">
-      <Heading as="h1">Stories by Positive</Heading>
-      <Divider marginTop="5" />
-      {/* <ArticleShort /> */}
-      {/* <ArticleShort /> */}
-      {/* <ArticleShort /> */}
-      {/* <LatestArticles /> */}
-      <BlogInfo />
+      <Heading as="h1">Stories by Positive | Web3 Security</Heading>
+      <Divider marginTop="10" />
+
+      {articles_render}
+
+      {/* TODO: <BlogInfo /> */}
     </Container>
   );
 };

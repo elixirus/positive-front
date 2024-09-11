@@ -1,4 +1,3 @@
-// import Head from 'next/head';
 import {
     Box,
     Container,
@@ -7,8 +6,14 @@ import {
     Image,
     HStack,
 } from '@chakra-ui/react';
+import fabric from '../../images/fabric.png';
+import eth from '../../images/eth.png';
+import ton from '../../images/ton.png';
+import tron from '../../images/tron.png';
+
 
 export default function Technologies() {
+
     return (
 
         <Container maxW={'3xl'}>
@@ -17,7 +22,7 @@ export default function Technologies() {
                 textAlign={'center'}
                 spacing={{ base: 8, md: 14 }}
             >
-                <p>We utilize the latest technologies and methods to ensure the security of your projects.</p>
+                {/* <p>We utilize the latest technologies and methods to ensure the security of your projects.</p> */}
 
                 <HStack
                     direction={'column'}
@@ -28,29 +33,47 @@ export default function Technologies() {
 
                     <Flex>
                         <Image
-                            rounded={'md'}
-                            alt={'product image'}
-                            src={
-                                'https://www.fabricgateway.com/images/fabricgateway/61/6158aaa9183c37a03477309822af3d16.png'
-                            }
-                            fit={'cover'}
-                            align={'center'}
-                            w={'100%'}
+                            // rounded={'md'}
+                            alt={'hyperledger fabric projects security audit'}
+                            src={fabric}
+                            // fit={'cover'}
+                            // align={'center'}
+                            // w={'100%'}
                             h={{ base: '25%', sm: '50px', lg: '100px' }}
                         />
                     </Flex>
 
                     <Flex>
                         <Image
-                            rounded={'md'}
-                            alt={'product image'}
-                            src={
-                                'https://www.vhv.rs/file/max/30/305014_ethereum-logo-png.png'
-                            }
-                            fit={'cover'}
-                            align={'center'}
-                            w={'100%'}
+                            // rounded={'md'}
+                            alt={'ethereum projects security audit'}
+                            src={eth}
+                            // fit={'cover'}
+                            // align={'center'}
+                            // w={'100%'}
                             h={{ base: '25%', sm: '50px', lg: '100px' }}
+                        />
+                    </Flex>
+                    <Flex>
+                        <Image
+                            rounded={'md'}
+                            alt={'ton projects security audit'}
+                            src={ton}
+                            // fit={'cover'}
+                            // align={'center'}
+                            // w={'100%'}
+                            h={{ base: '25%', sm: '50px', lg: '90px' }}
+                        />
+                    </Flex>
+                    <Flex>
+                        <Image
+                            rounded={'md'}
+                            alt={'tron projects security audit'}
+                            src={tron}
+                            // fit={'cover'}
+                            // align={'center'}
+                            // w={'100%'}
+                            h={{ base: '25%', sm: '50px', lg: '80px' }}
                         />
                     </Flex>
                 </HStack>

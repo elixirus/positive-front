@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     Box,
     Heading,
@@ -33,6 +33,7 @@ const BlogTags: React.FC<IBlogTags> = (props) => {
 interface BlogAuthorProps {
     date: Date;
     name: string;
+    image: string;
 }
 
 export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
@@ -41,7 +42,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
             <Image
                 borderRadius="full"
                 boxSize="40px"
-                src="https://100k-faces.glitch.me/random-image"
+                src={props.image}
                 alt={`Avatar of ${props.name}`}
             />
             <Text fontWeight="medium">{props.name}</Text>
@@ -51,7 +52,29 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
     );
 };
 
-const ArticleShort = () => {
+const ArticleShort = (props: any) => {
+    const [blog_image, setImage] = useState();
+
+
+    // useEffect(() => {
+    //     const loadContents = async () => {
+    //         try {
+    //             console.log("props.props.blog_image: ", props.props.blog_image);
+
+    //             const blog_image = await import(`../../images/articles/${props.props.blog_image}.jpg`);
+    //             console.log("blog_image: ", blog_image);
+
+    //             setImage(blog_image);
+    //         } catch (e) {
+    //             console.error("Error loading content: ", e);
+    //         }
+    //     };
+
+    //     loadContents();
+    // }, []);
+
+
+
     return (
         <Box
             marginTop={{ base: '1', sm: '5' }}
@@ -69,14 +92,12 @@ const ArticleShort = () => {
                     zIndex="2"
                     marginLeft={{ base: '0', sm: '5%' }}
                     marginTop="5%">
-                    <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+                    <Link textDecoration="underline" _hover={{ textDecoration: 'none' }}>
                         <Image
-                            borderRadius="lg"
-                            src={
-                                'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                            }
-                            alt="some good alt text"
-                            objectFit="contain"
+                            // borderRadius="lg"
+                            src={props.props.blog_image}
+                            alt={props.props.blog_title}
+                        // objectFit="contain"
                         />
                     </Link>
                 </Box>
@@ -98,10 +119,10 @@ const ArticleShort = () => {
                 flexDirection="column"
                 justifyContent="center"
                 marginTop={{ base: '3', sm: '0' }}>
-                <BlogTags tags={['Engineering', 'Product']} />
+                <BlogTags tags={props.props.tags} />
                 <Heading marginTop="1">
-                    <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-                        Blog article title
+                    <Link textDecoration="underline" _hover={{ textDecoration: 'none' }} href={`blog/${props.props.article_id}`} >
+                        {props.props.blog_title}
                     </Link>
                 </Heading>
                 <Text
@@ -109,12 +130,9 @@ const ArticleShort = () => {
                     marginTop="2"
                     color={useColorModeValue('gray.700', 'gray.200')}
                     fontSize="lg">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
+                    {props.props.short}
                 </Text>
-                <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} />
+                <BlogAuthor name={props.props.author_name} date={new Date(props.props.date)} image={props.props.image} />
             </Box>
         </Box>
     );

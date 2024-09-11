@@ -1,24 +1,19 @@
 import {
   Box,
-  Container,
-  Link,
-  SimpleGrid,
-  Stack,
   Text,
   Flex,
-  Tag,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { ReactNode } from 'react';
-import logo from '../../logo.svg';
+// import { ReactNode } from 'react';
+// import logo from '../../logo.svg';
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
-  return (
-    <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
-      {children}
-    </Text>
-  );
-};
+// const ListHeader = ({ children }: { children: ReactNode }) => {
+//   return (
+//     <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
+//       {children}
+//     </Text>
+//   );
+// };
 
 export default function LargeWithLogoCentered() {
   return (
@@ -93,7 +88,8 @@ export default function LargeWithLogoCentered() {
 
         <Text pt={6} fontSize={'sm'} textAlign={'center'}>
           {/* <img src={logo} style={{ height: 24 }} alt="logo" /> */}
-          © 2023 Positive.com
+          © 2024 Positive | Web3 Security <br />
+          {/* <a href='mailto:web3@ptsecurity.com'>web3@ptsecurity.com</a> */}
         </Text>
       </Box>
     </Box>

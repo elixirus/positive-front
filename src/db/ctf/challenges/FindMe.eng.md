@@ -1,0 +1,1 @@
+A new protocol promising high APR has appeared in the network. When you carefully study the project code, you, as a professional, realise that it is a scam, don't you?) Now your task is to teach the scammers who have deployed the project in the network a lesson so that they cannot withdraw funds from the protocol.

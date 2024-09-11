@@ -1,0 +1,6 @@
+[
+  "constructor(uint256 _out)",
+  "function flag() view returns (bool)",
+  "function out() view returns (uint256)",
+  "function verify(uint256[2], uint256[2][2], uint256[2], uint256[1])"
+]

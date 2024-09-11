@@ -1,0 +1,19 @@
+[
+    {
+        "article_id": "security-of-smart-contracts-in-TON-blockchain",
+        "author": [
+            "Ilya Druzhinin"
+        ],
+        "author_image": "images/druzhinin.jpg",
+        "author_role": "security researcher",
+        "tags": [
+            "TON",
+            "General"
+        ],
+        "blog_title": "Security of TON smart contracts",
+        "short": "Smart contracts are autonomous programmes that automatically perform certain actions under certain conditions. In the TON (Telegram Open Network) blockchain, smart contracts are used to manage and protect digital assets. The security of smart contracts in TON is a key aspect, as improper implementation can lead to loss of funds and other undesirable consequences. In this article, we will look at the main aspects of smart contract security in TON",
+        "blog_image": "images/druzhinin-2.jpg",
+        "date": "2024-08-14",
+        "blog_body": "<Stackspacing={3}><CustomDividerpadding=\"10\"title=\"Introduction\"/><Text>Smartcontractsareautonomousprogrammesthatautomaticallyperformcertainactionsundercertainconditions.IntheTON(TelegramOpenNetwork)blockchain,smartcontractsareusedtomanageandprotectdigitalassets.ThesecurityofsmartcontractsinTONisakeyaspect,asimproperimplementationcanleadtolossoffundsandotherundesirableconsequences.Inthisarticle,wewilllookatthemainaspectsofsmartcontractsecurityinTON.</Text><CustomDividerpadding=\"10\"title=\"FeaturesofsmartcontractsinTON\"/><Text>TONisablockchainplatformthatusessmartcontractstomanagedigitalassets.KeyfeaturesofsmartcontractsinTONinclude:</Text><Listspacing={3}><ListItem><Text><ListIconas={MdCheckCircle}color='green.500'/>Autonomy:SmartcontractsinTONareautonomousandperformcertainactionsontheirownwhencertainconditionsaremet.</Text></ListItem><ListItem><Text><ListIconas={MdCheckCircle}color='green.500'/>Security:TONprovidesahighlevelofsecurityforsmartcontracts,protectingthemfromattacksandunauthorisedaccess.</Text></ListItem><ListItem><Text><ListIconas={MdCheckCircle}color='green.500'/>Scalability:TONcanhandlealargenumberoftransactionspersecond,makingitidealforsmartcontracts.</Text></ListItem></List><CustomDividerpadding=\"10\"title=\"SecurityofsmartcontractsinTON\"/><Text>ToensurethesecurityofsmartcontractsinTON,developersshouldpayattentiontothefollowingaspects:</Text><Listspacing={1}><Text><ListItem><ListIconas={MdCheckCircle}color='green.500'/>Codeauditing:Beforeasmartcontractisdeployed,itscodeshouldbeauditedtoensurethatitiswrittensecurelyandreliably.Thiscanbedonebyindependentexpertsorbythedevelopercommunity.</ListItem></Text><Text><ListItem><ListIconas={MdCheckCircle}color='green.500'/>AccessRestriction:Accesstosmartcontractsshouldberestrictedtoonlythosewhoshouldhaveaccess.Thiscanbeachievedthroughauthorisationandauthenticationmechanisms.</ListItem></Text><Text><ListItem><ListIconas={MdCheckCircle}color='green.500'/>Datasecurity:Datastoredinsmartcontractsshouldbeprotectedfromunauthorisedaccessandmodification.Thiscanbeachievedthroughencryptionandothercryptographicmethods.</ListItem></Text><Text><ListItem><ListIconas={MdCheckCircle}color='green.500'/>Transactionatomicity:Transactionsinsmartcontractsmustbeatomic,i.e.eitherfullyexecutedornotexecutedatall.Thisensuresthatthesmartcontractisinaconsistentstate.</ListItem></Text></List><CustomDividerpadding=\"10\"title=\"Conclusion\"/><Text>ThesecurityofsmartcontractsintheTONblockchainiskeytoensuringthestabilityandreliabilityoftheplatform.Developersshouldcarefullyconsultandauditthecode,ensureaccessrestriction,datasecurityandtransactionatomicity.Byfollowingtheseguidelines,itispossibletocreatereliableandsecuresmartcontractsinTON.</Text></Stack>"
+    }
+]

@@ -1,0 +1,2 @@
+The developers were not careful and left the bug in the code. Will you be able to exploit the vulnerability?
+The “Check the proof” button creates a proof based on your witness (.wtns), checks it and sends the proof to the contract.

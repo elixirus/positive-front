@@ -1,0 +1,1 @@
+In the new version of the DAO community protocol, DAO2, the owner has fixed the bug. However, it seems that the protocol is still vulnerable to the previous bug, which is understood in cryptography. 

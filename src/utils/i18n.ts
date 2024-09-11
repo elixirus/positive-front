@@ -5,22 +5,31 @@ i18n.use(initReactI18next).init({
     lng: "en",
     fallbackLng: "en",
     interpolation: {
-      escapeValue: false,
+        escapeValue: false,
     },
     resources: {
         en: {
             translation: {
                 blog: 'blog',
-                request: 'request'
+                request: 'request',
+                challengeMetaInfo: 'Info',
+                challengeName: 'Name',
+                challengeCategory: 'Category',
+
+
             }
         },
         ru: {
             translation: {
                 blog: 'блог',
-                request: 'запросить услуги'
+                request: 'запросить услуги',
+                challengeInfo: 'Информация',
+                challengeName: 'Название',
+                challengeCategory: 'Категория',
+
             }
         },
     },
-  });
+});
 
 export default i18n;

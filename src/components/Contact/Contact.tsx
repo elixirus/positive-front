@@ -1,32 +1,16 @@
 import {
   Container,
-  Flex,
   Box,
-  Heading,
-  Text,
-  IconButton,
-  Button,
-  VStack,
-  HStack,
-  Wrap,
-  Image,
-  WrapItem,
-  FormControl,
-  FormLabel,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Textarea,
   Stack,
 } from '@chakra-ui/react';
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
-} from 'react-icons/md';
-import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
+// import {
+//   MdPhone,
+//   MdEmail,
+//   MdLocationOn,
+//   MdFacebook,
+//   MdOutlineEmail,
+// } from 'react-icons/md';
+// import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 
 export default function contact() {
   return (

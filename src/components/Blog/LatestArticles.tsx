@@ -69,7 +69,7 @@ const ArticleList = () => {
         <WrapItem width={{ base: '100%', sm: '45%', md: '45%', lg: '30%' }}>
           <Box w="100%">
             <Box borderRadius="lg" overflow="hidden">
-              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              <Link textDecoration="none" _hover={{ textDecoration: 'underline' }}>
                 <Image
                   transform="scale(1.0)"
                   src={
@@ -87,7 +87,7 @@ const ArticleList = () => {
             </Box>
             <BlogTags tags={['Engineering', 'Product']} marginTop="3" />
             <Heading fontSize="xl" marginTop="2">
-              <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              <Link textDecoration="none" _hover={{ textDecoration: 'underline' }}>
                 Some blog title
               </Link>
             </Heading>

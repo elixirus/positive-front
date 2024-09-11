@@ -1,0 +1,125 @@
+{
+  "challenges": [
+    {
+      "name": "AntiRugPull",
+      "code": "",
+      "difficulty": 4,
+      "description": "",
+      "points": 30,
+      "type": "evm",
+      "status": "archive",
+      "address": "",
+      "date": "2024/05"
+    },
+    {
+      "name": "FakeDAO",
+      "code": "",
+      "difficulty": 3,
+      "description": "",
+      "points": 30,
+      "type": "evm",
+      "status": "archive",
+      "address": "",
+      "date": "2024/05"
+    },
+    {
+      "name": "DAO_1",
+      "code": "",
+      "difficulty": 5,
+      "description": "",
+      "points": 40,
+      "type": "evm",
+      "status": "archive",
+      "address": "",
+      "date": "2024/05"
+    },
+    {
+      "name": "DAO_2",
+      "code": "",
+      "difficulty": 6,
+      "description": "",
+      "points": 50,
+      "type": "evm",
+      "status": "archive",
+      "address": "",
+      "date": "2024/05"
+    },
+    {
+      "name": "WrappedEther",
+      "code": "",
+      "difficulty": 3,
+      "description": "",
+      "points": 20,
+      "type": "evm",
+      "status": "archive",
+      "address": "",
+      "date": "2024/05"
+    },
+    {
+      "name": "FormalMethods",
+      "code": "",
+      "difficulty": 10,
+      "description": "",
+      "points": 80,
+      "type": "formal",
+      "status": "archive",
+      "address": "",
+      "date": "2024/05"
+    },
+    {
+      "name": "Underconstrained",
+      "code": "",
+      "difficulty": 10,
+      "description": "",
+      "points": 80,
+      "type": "zk",
+      "status": "archive",
+      "address": "",
+      "date": "2024/05"
+    },
+    {
+      "name": "FindMe",
+      "code": "",
+      "difficulty": 2,
+      "description": "",
+      "points": 10,
+      "type": "evm",
+      "status": "archive",
+      "address": "0x6ba2367042A4425b0791eB47370E3de3c7D7e9eb",
+      "date": "2023/05"
+    },
+    {
+      "name": "LendingPool",
+      "code": "",
+      "difficulty": 4,
+      "description": "",
+      "points": 20,
+      "type": "evm",
+      "status": "archive",
+      "address": "0xCb794b0199A877Bc44827E222a9eC086bfE4f283",
+      "date": "2023/05"
+    },
+    {
+      "name": "Lift",
+      "code": "",
+      "difficulty": 6,
+      "description": "",
+      "points": 30,
+      "type": "evm",
+      "status": "archive",
+      "address": "0xfBc07B0d5fa2DcB9F814e215Ae0d6860366A6a19",
+      "date": "2023/05"
+    },
+    {
+      "name": "PredictTheFuture",
+      "code": "",
+      "difficulty": 8,
+      "description": "",
+      "points": 40,
+      "type": "evm",
+      "status": "archive",
+      "address": "0xbB2877218FC73476Ea9040B190C0f0A968E90eD4",
+      "date": "2023/05"
+    }
+  ]
+}
