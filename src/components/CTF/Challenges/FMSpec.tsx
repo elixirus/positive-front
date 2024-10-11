@@ -14,66 +14,66 @@ require("highlight.js/styles/atom-one-dark.css");
 hljsDefineSolidity(hljs);
 
 export default function FMSpec({ id, language = "solidity" }) {
-  const [code, setCode] = useState("");
-  let [value, setValue] = React.useState("");
-  let [encryptedValue, setEncryptedValue] = React.useState("");
+//   const [code, setCode] = useState("");
+//   let [value, setValue] = React.useState("");
+//   let [encryptedValue, setEncryptedValue] = React.useState("");
 
 
-  const publicKey = `
------BEGIN PUBLIC KEY-----
-MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDlOJu6TyygqxfWT7eLtGDwajtN
-FOb9I5XRb6khyfD1Yt3YiCgQWMNW649887VGJiGr/L5i2osbl8C9+WJTeucF+S76
-xFxdU6jE0NQ+Z+zEdhUTooNRaY5nZiu5PgDB0ED/ZKBUSLKL7eibMxZtMlUDHjm4
-gwQco1KRMDSmXSMkDwIDAQAB
------END PUBLIC KEY-----`;
+//   const publicKey = `
+// -----BEGIN PUBLIC KEY-----
+// MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDlOJu6TyygqxfWT7eLtGDwajtN
+// FOb9I5XRb6khyfD1Yt3YiCgQWMNW649887VGJiGr/L5i2osbl8C9+WJTeucF+S76
+// xFxdU6jE0NQ+Z+zEdhUTooNRaY5nZiu5PgDB0ED/ZKBUSLKL7eibMxZtMlUDHjm4
+// gwQco1KRMDSmXSMkDwIDAQAB
+// -----END PUBLIC KEY-----`;
 
 
-  useEffect(() => {
-    const loadContents = async () => {
-      try {
-        const sourcesFile = await import(`../../db/ctf/challenges/${id}.sol`);
-        const targetText =
-          typeof sourcesFile === "string" ? sourcesFile : sourcesFile.default;
-        const text = await loadText(targetText);
-        setCode(text);
-      } catch (e) {
-        console.error("Error loading content: ", e);
-      }
-    };
+//   useEffect(() => {
+//     const loadContents = async () => {
+//       try {
+//         const sourcesFile = await import(`../../db/ctf/challenges/${id}.sol`);
+//         const targetText =
+//           typeof sourcesFile === "string" ? sourcesFile : sourcesFile.default;
+//         const text = await loadText(targetText);
+//         setCode(text);
+//       } catch (e) {
+//         console.error("Error loading content: ", e);
+//       }
+//     };
 
-    loadContents();
-  }, [id]); // Depend on ID to reload if it changes
+//     loadContents();
+//   }, [id]); // Depend on ID to reload if it changes
 
-  const renderHighlightedCode = (content, lang) => {
-    const adaptedLanguage = lang; // Set the language based on props or logic
+//   const renderHighlightedCode = (content, lang) => {
+//     const adaptedLanguage = lang; // Set the language based on props or logic
 
-    const highlightedCode = hljs.highlight(content, {
-      language: adaptedLanguage,
-    }).value;
+//     const highlightedCode = hljs.highlight(content, {
+//       language: adaptedLanguage,
+//     }).value;
 
-    const lineNumbers = highlightedCode
-      .split(/\n/)
-      .map(
-        (line, index) =>
-          `<tr key=${index}>
-          <td class="line-number" data-pseudo-content="${index + 1}"></td>
-          <td>${line || " "}</td>
-        </tr>`
-      )
-      .join("");
+//     const lineNumbers = highlightedCode
+//       .split(/\n/)
+//       .map(
+//         (line, index) =>
+//           `<tr key=${index}>
+//           <td class="line-number" data-pseudo-content="${index + 1}"></td>
+//           <td>${line || " "}</td>
+//         </tr>`
+//       )
+//       .join("");
 
-    return `<pre><code><table class='code-table'>${lineNumbers}</table></code></pre>`;
-  };
+//     return `<pre><code><table class='code-table'>${lineNumbers}</table></code></pre>`;
+//   };
 
-  let handleInputChange = (e) => {
-    var encrypt = new JSEncrypt();
-    encrypt.setPublicKey(publicKey);
-    let encrypted = Crypto.AES.e //.encrypt(e.target.value, publicKey).toString(); //encrypt..encrypt(e.target.value);
-    console.info("encrypted: ", encrypted);
-    // let inputValue = e.target.value
-    setValue(e.target.value)
-    setEncryptedValue(encrypted)
-  }
+//   let handleInputChange = (e) => {
+//     var encrypt = new JSEncrypt();
+//     encrypt.setPublicKey(publicKey);
+//     let encrypted = Crypto.AES.e //.encrypt(e.target.value, publicKey).toString(); //encrypt..encrypt(e.target.value);
+//     console.info("encrypted: ", encrypted);
+//     // let inputValue = e.target.value
+//     setValue(e.target.value)
+//     setEncryptedValue(encrypted)
+//   }
 
   return (
     <>

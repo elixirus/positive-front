@@ -39,8 +39,8 @@ function App() {
                 <Box flex="1">
                   <Routes>
                     <Route path="/" element={<Main />} />
-                    <Route path="/blog" element={<Blog />} />
-                    <Route path="/blog/:id" element={<BlogArticle />} />
+                    {/* <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/:id" element={<BlogArticle />} /> */}
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/ctf" element={<CTF />} />
                     <Route path="/ctf/:id" element={<ChallengePage />} />

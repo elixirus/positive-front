@@ -165,7 +165,7 @@ export default function WithSubnavigation() {
                         spacing={6}>
 
                         <Link
-                            href="https://twitter.com/ptswarm"
+                            href="https://twitter.com/PositiveWeb3"
                             fontSize={'sm'}
                             fontWeight={500}
                             color={linkColor}
@@ -178,7 +178,7 @@ export default function WithSubnavigation() {
                         </Link>
 
                         <Link
-                            href="https://t.me/ptswarm"
+                            href="https://t.me/PositiveWeb3"
                             fontSize={'sm'}
                             fontWeight={500}
                             color={linkColor}
@@ -472,10 +472,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
-    {
-        label: 'blog',
-        href: 'blog'
-    },
+    // {
+    //     label: 'blog',
+    //     href: 'https://blog.positive.com'
+    // },
     {
         label: 'ctf',
         href: 'ctf'
